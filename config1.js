@@ -54,7 +54,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Number of recent immigrants in each part of Vancouver per 2016 census as proportion of the number in 2006',
-            image: 'storytelling-main-b/dcdscxdcxds.jpg',
+            image: 'dcdscxdcxds.jpg',
             description: 'As shown in this bar chart, the changes in the number of immigrants in Vancouver, BC, between 2016 and 2006 are not even, ranging from decline for most local areas and increases for selective ones, with the most dramatic being West Point Grey. ',
             location: {
                 center: [-123.20343, 49.26769],
@@ -79,7 +79,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Geneva',
-            image: 'storytelling-main-b/Thereof--HK or Mainland.jpg',
+            image: 'Thereof--HK or Mainland.jpg',
             description: 'Being the largest immigrant groups in Canada, the succeeding waves of Chinese immigrants have shaped Vancouver and its vicinities deeply, and the recent wave would be no exception. Data indicated that compared to 2006, the number of HK-born recent immigrants in each part declined, while the number of PRC(not including SARs)-born individuals rose dramatically in West Point Grey',
             location: {
                 center: [-123.20343, 49.26769],
@@ -91,9 +91,28 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: [ {layer: 'Local-Area',
-             opacity: 0}]
+            onChapterExit: []
         },
+        {
+    id: 'chapter-3a',
+    alignment: 'left',
+    hidden: false,
+    title: 'Display Title',
+    image: 'ededededre.jpg',
+    description: 'With the changes in recent immigrant number one might also expect changes in household size pattern.',
+    location: {
+        center: [-123.1164, 49.2596],
+        zoom: 8.5,
+        pitch: 60,
+        bearing: 0
+    },
+    mapAnimation: 'flyTo',
+    rotateAnimation: false,
+    callback: '',
+    onChapterEnter: [],
+    onChapterExit: [{layer: 'Local-Area',
+             opacity: 0}]
+},
         {
             id: 'fourth-chapter',
             alignment: 'fully',
