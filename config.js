@@ -111,7 +111,7 @@ style: 'mapbox://styles/mapbox/streets-v12',
     callback: '',
     onChapterEnter: [],
     onChapterExit: [{layer: 'Local-Area',
-             opacity: 0}]
+             opacity: 0, duration: 5000}]
 },
         {
             id: 'fourth-chapter',
@@ -132,15 +132,17 @@ style: 'mapbox://styles/mapbox/streets-v12',
             onChapterEnter: [ 
                {layer: 'Wayfinding-map-guide',
                    opacity: 1,
-                    duration: 5000
+                duration: 5000
                }],
             onChapterExit: [ {
                     layer: 'Wayfinding-map-guide',
-                   opacity: 0
+                   opacity: 0, 
+                duration: 5000
                },
                 {
                  layer: 'Rapid-Transit-Stations',
                    opacity: 1
+                duration: 5000
                 }]
         },
         {
