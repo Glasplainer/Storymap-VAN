@@ -122,7 +122,7 @@ style: 'mapbox://styles/mapbox/streets-v12',
             description: 'The increase in number of recent immigrants would necessitate more wayfinding map stands for those not familiar with the city. This would mean that ideally there should be more such stands where more recent immigrants live, although the Downtown would likely require more such signs as well due to the sheer size of population movement into and out of downtown for various non-residential purposes. ',
             location: {
                 center: [-123.1129, 49.2619],
-                zoom: 4,
+                zoom: 8.888888,
                 pitch: 0,
                 bearing: 0
             },
@@ -154,15 +154,23 @@ style: 'mapbox://styles/mapbox/streets-v12',
             description: 'In spite of changes in immigrant distribution, skytrain lines and distribution of stations appeared to be relatively non-co-ordinated with the changes.',
             location: {
                 center: [-123.11143, 49.28555],
-                zoom: 4,
+                zoom: 8.88888,
                 pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [{
+                 layer: 'Rapid-Transit-Stations',
+                   opacity: 1
+                duration: 5000
+                }],
+            onChapterExit: [{
+                 layer: 'Rapid-Transit-Stations',
+                   opacity: 0
+                duration: 5000
+                }]
         }
     ]
 };
