@@ -1,5 +1,5 @@
 # Introduction
-  This project is done by Geoffrey Zhehao Li from census data from 2006 and 2016 for the city of Vancouver, BC, alongside information from the OpenData portal of the City of Vancouver, in the form of a storymap. 
+  This project is done by Geoffrey Zhehao Li from census data from 2006 and 2016 for the city of Vancouver, BC, alongside information from the OpenData portal of the City of Vancouver, in the form of a storymap. The intended audience would be, obviously, the general public. 
 
   The idea behind the storymap would be due to how Vancouver, BC, being one of the main cities of North American western coast, had been a major destination of immigration, and one would expect to see in a major immigration destination city significant changes as a result of immigration patterns.
 
