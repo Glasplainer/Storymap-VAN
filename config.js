@@ -141,7 +141,7 @@ style: 'mapbox://styles/mapbox/streets-v12',
                },
                 {
                  layer: 'Rapid-Transit-Stations',
-                   opacity: 1
+                   opacity: 1,
                 duration: 5000
                 }]
         },
@@ -163,12 +163,12 @@ style: 'mapbox://styles/mapbox/streets-v12',
             callback: '',
             onChapterEnter: [{
                  layer: 'Rapid-Transit-Stations',
-                   opacity: 1
+                   opacity: 1,
                 duration: 5000
                 }],
             onChapterExit: [{
                  layer: 'Rapid-Transit-Stations',
-                   opacity: 0
+                   opacity: 0,
                 duration: 5000
                 }]
         }
