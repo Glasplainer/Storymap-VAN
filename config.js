@@ -36,17 +36,21 @@ style: 'mapbox://styles/mapbox/streets-v12',
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [
-                {
-                        layer: 'Local-Area',
-                     opacity: 1,
-                    duration: 5000
-                    }
+            onChapterEnter: [ {layer: 'Wayfinding-map-guide',
+                   opacity: 0,
+                duration: 5000
+               }，
+                             
+                
             ],
             onChapterExit: [
+                 
                  {
-                  
-                 }
+                    layer: 'Local-Area',
+                     opacity: 1,
+                    duration: 5000
+                    } 
+                 
             ]
         },
         {
@@ -71,8 +75,20 @@ style: 'mapbox://styles/mapbox/streets-v12',
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+             onChapterEnter: [ {layer: 'Wayfinding-map-guide',
+                   opacity: 0,
+                duration: 5000
+               }，
+                             
+                
+            ],
+            onChapterExit: [
+                 
+                 {
+                    layer: 'Local-Area',
+                     opacity: 1,
+                    duration: 5000
+                    } 
         },
         {
             id: 'third-identifier',
@@ -90,8 +106,20 @@ style: 'mapbox://styles/mapbox/streets-v12',
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+             onChapterEnter: [ {layer: 'Wayfinding-map-guide',
+                   opacity: 0,
+                duration: 5000
+               }，
+                             
+                
+            ],
+            onChapterExit: [
+                 
+                 {
+                    layer: 'Local-Area',
+                     opacity: 0,
+                    duration: 5000
+                    } 
         },
         {
     id: 'chapter-3a',
@@ -134,11 +162,10 @@ style: 'mapbox://styles/mapbox/streets-v12',
                    opacity: 1,
                 duration: 5000
                }],
-            onChapterExit: [ {
-                    layer: 'Wayfinding-map-guide',
-                   opacity: 0, 
+            onChapterExit: [ {layer: 'Wayfinding-map-guide',
+                   opacity: 0,
                 duration: 5000
-               },
+               }，
                 {
                  layer: 'Rapid-Transit-Stations',
                    opacity: 1,
@@ -170,7 +197,12 @@ style: 'mapbox://styles/mapbox/streets-v12',
                  layer: 'Rapid-Transit-Stations',
                    opacity: 0,
                 duration: 5000
-                }]
+                }，
+                             {
+                    layer: 'Local-Area',
+                     opacity: 0,
+                    duration: 5000
+                    } ]
         }
     ]
 };
