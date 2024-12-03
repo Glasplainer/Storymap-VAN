@@ -18,4 +18,7 @@ https://opendata.vancouver.ca/explore/dataset/rapid-transit-stations/information
 The right to the data belong to Statistics Canada and City of Vancouver respectively. 
 
 # Structure
-The structure of this story map would have included an introductory part, the parts about census data(recent immigrant population, the parts of recent immigrant population from China(not including SARs) and HK, changes in average household size) and two chapters on public infrastructures in relation to changes in recent immigration-related patterns, including one for wayfinder signs and one for Skytrain stations. 
+The structure of this story map would have included an introductory part, the parts about census data(recent immigrant population, the parts of recent immigrant population from China(not including SARs) and HK, changes in average household size) and two chapters on public infrastructures in relation to changes in recent immigration-related patterns, including one for wayfinder signs and one for Skytrain stations.
+
+# Link to the work
+https://glasplainer.github.io/Storymap-VAN/
