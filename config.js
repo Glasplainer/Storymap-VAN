@@ -13,7 +13,7 @@ var config = {
         },
         insetPosition: 'bottom-right',
         theme: 'dark',
-        use3dTerrain: false, //set true for enabling 3D maps.
+        use3dTerrain: true, 
         auto: false,
         title: 'Vancouver:2006-2016',
         subtitle: 'A storymap showing how patterns of residence for recent immigrants changed in Vancouver, BC, between the censuses of 2006 and 2016, in relationship to facilities including wayfinder signs and Skytrain stations. ',
@@ -150,7 +150,7 @@ var config = {
                 description: 'The increase in number of recent immigrants would necessitate more wayfinding map stands for those not familiar with the city. This would mean that ideally there should be more such stands where more recent immigrants live, although the Downtown would likely require more such signs as well due to the sheer size of population movement into and out of downtown for various non-residential purposes. ',
                 location: {
                     center: [-123.1129, 49.2619],
-                    zoom: 8.888888,
+                    zoom: 10,
                     pitch: 0,
                     bearing: 0
                 },
@@ -181,7 +181,7 @@ var config = {
                 description: 'In spite of changes in immigrant distribution, skytrain lines and distribution of stations appeared to be relatively non-co-ordinated with the changes.',
                 location: {
                     center: [-123.11143, 49.28555],
-                    zoom: 8.88888,
+                    zoom: 10,
                     pitch: 0,
                     bearing: 0
                 },
