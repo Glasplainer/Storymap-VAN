@@ -46,7 +46,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Local-Area',
+                        layer: 'Immigrant-proportion',
                          opacity: 1,
                         duration: 5000
                         } 
@@ -85,7 +85,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Local-Area',
+                        layer: 'Immigrant-proportion',
                          opacity: 1,
                         duration: 5000
                         } ]
@@ -116,7 +116,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Local-Area',
+                        layer: 'Immigrant-proportion',
                          opacity: 0,
                         duration: 5000
                         } ]
@@ -138,7 +138,7 @@ var config = {
         rotateAnimation: false,
         callback: '',
         onChapterEnter: [],
-        onChapterExit: [{layer: 'Local-Area',
+        onChapterExit: [{layer: 'Immigrant-proportion',
                  opacity: 0, duration: 5000}]
     },
             {
@@ -199,7 +199,7 @@ var config = {
                     duration: 5000
                     },
                                  {
-                        layer: 'Local-Area',
+                        layer: 'Immigrant-proportion',
                          opacity: 0,
                         duration: 5000
                         } ]
