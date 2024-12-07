@@ -139,6 +139,24 @@
 <body>
 
     <div id="map"></div>
+     <div class="legend" id="pop-legend">
+      <h4>Number of recent immigrants in 2016 as a proportion of number in 2006</h4>
+      <div><span style="background-color: #f1eef6"></span> ≤ CLASS5</div>
+      <div><span style="background-color: #bdc9e1"></span> ≤ CLASS4</div>
+      <div><span style="background-color: #74a9cf"></span> ≤ CLASS3</div>
+      <div><span style="background-color: #2b8cbe"></span> ≤ CLASS2</div>
+      <div><span style="background-color: #045a8d"></span> ≤ CLASS1</div>
+  </div>
+    <div>
+        <h4>Time Installed<h4>
+      <div><span style="background-color: #fff7ec'"></span> = 2009</div>
+      <div><span style="background-color: #fee8c8"></span> = 2010</div>
+      <div><span style="background-color: #fdd49e"></span> = 2011</div>
+      <div><span style="background-color: #fdbb84"></span> = 2012</div>
+      <div><span style="background-color: #fc8d59"></span> = 2013</div>
+        <div><span style="background-color: #ef6548"></span> = 2014</div>
+       <div><span style="background-color: #d7301f"></span> = 2015</div>  
+        </h4>div>
     <div id="story"></div>
 
     <script src="config.js"></script>
@@ -314,24 +332,24 @@
                     }
                 });
             };
+           
             map.addLayer({
-            'id': 'Local-Area',
+            'id': 'Immigrant-proportion',
             'type': 'fill',
             'source':{type: 'geojson',
-                            data: 'https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/local-area-boundary/exports/geojson?lang=en&timezone=America/Vancouver'
+                            data: 'local-area-boundary.geojson'
                             },
             'paint':{
-                'fill-color':'#68023E',
+                'fill-color':'['interpolate',['linear'],['get','1'],
+                0.5, '#f1eef6',
+                1, '#bdc9e1',
+                    1.5,'#74a9cf',
+                    2,'#2b8cbe',
+                    2.5, '#045a8d'];
+                                                                    ],
                 'fill-outline-color':'lightgrey' 
             }
         });
-        
-        map.on('click', 'Local-Area', (event) => {
-        new mapboxgl.Popup()
-        .setLngLat(event.features[0].geometry.coordinates)
-        .setHTML(`<strong>Local Area:</strong> ${event.features[0].properties.name}`)
-        .addTo(map);
-});
             map.addLayer({
             'id': 'Rapid-Transit-Stations',
             'type': 'circle',
@@ -356,8 +374,8 @@
                 'circle-stroke-width': 0.5,
                 'circle-stroke-color': 'white',
                 'circle-color': ['interpolate',['linear'],['get', 'installation'],
-                                                  2009,  '#fff7ec',
-                                                  2010,'#fee8c8',
+                                                  2009, '#fff7ec',
+                                                  2010, '#fee8c8',
                                                   2011, '#fdd49e',
                                                   2012, '#fdbb84',
                                                   2013, '#fc8d59',
