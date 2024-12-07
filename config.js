@@ -190,7 +190,7 @@ var config = {
                 rotateAnimation: false,
                 callback: '',
                 onChapterEnter: [{layer: 'Local-Area',
-                 opacity: 0.23, duration: 5000}
+                 opacity: 0.23, duration: 5000}, 
                     {
                      layer: 'Rapid-Transit-Stations',
                        opacity: 1,
