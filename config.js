@@ -46,7 +46,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Immigrant-proportion',
+                        layer: 'Local-Area',
                          opacity: 1,
                         duration: 5000
                         } 
@@ -85,7 +85,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Immigrant-proportion',
+                        layer: 'Local-Area',
                          opacity: 1,
                         duration: 5000
                         } ]
@@ -96,7 +96,7 @@ var config = {
                 hidden: false,
                 title: 'Thereof---PRC(not including the SARs) and HK',
                 image: 'Thereof--HK or Mainland.jpg',
-                description: 'Being the largest immigrant groups in Canada, the succeeding waves of Chinese immigrants have shaped Vancouver and its vicinities deeply, and the recent wave would be no exception. Data indicated that compared to 2006, the number of HK-born recent immigrants in each part declined, while the number of PRC(not including SARs)-born individuals rose dramatically in West Point Grey',
+                description: 'Being the largest immigrant groups in Canada, the succeeding waves of Chinese(including those from mainland China or from HK) immigrants have shaped Vancouver and its vicinities deeply, and the recent wave would be no exception. Data indicated that compared to 2006, the number of HK-born recent immigrants in each part declined, while the number of PRC(not including SARs)-born individuals rose dramatically in West Point Grey and to some extent in a few other neighbourhoods, as shown here, while in Strathcona, the traditional centre of historical Chinese-Canadian communities, the number of recent immigrants from either mainland China or HK actually declined',
                 location: {
                     center: [-123.20343, 49.26769],
                     zoom: 12.52,
@@ -116,7 +116,7 @@ var config = {
                 onChapterExit: [
                      
                      {
-                        layer: 'Immigrant-proportion',
+                        layer: 'Local-Area',
                          opacity: 0,
                         duration: 5000
                         } ]
@@ -138,8 +138,8 @@ var config = {
         rotateAnimation: false,
         callback: '',
         onChapterEnter: [],
-        onChapterExit: [{layer: 'Immigrant-proportion',
-                 opacity: 0, duration: 5000}]
+        onChapterExit: [{layer: 'Local-Area',
+                 opacity: 0.23, duration: 5000}]
     },
             {
                 id: 'fourth-chapter',
@@ -157,7 +157,8 @@ var config = {
                 mapAnimation: 'flyTo',
                 rotateAnimation: false,
                 callback: '',
-                onChapterEnter: [ 
+                onChapterEnter: [ {layer: 'Local-Area',
+                 opacity: 0.23, duration: 5000}
                    {layer: 'Wayfinding-map-guide',
                        opacity: 1,
                     duration: 5000
@@ -188,7 +189,9 @@ var config = {
                 mapAnimation: 'flyTo',
                 rotateAnimation: false,
                 callback: '',
-                onChapterEnter: [{
+                onChapterEnter: [{layer: 'Local-Area',
+                 opacity: 0.23, duration: 5000}
+                    {
                      layer: 'Rapid-Transit-Stations',
                        opacity: 1,
                     duration: 5000
@@ -199,7 +202,7 @@ var config = {
                     duration: 5000
                     },
                                  {
-                        layer: 'Immigrant-proportion',
+                        layer: 'Local-Area',
                          opacity: 0,
                         duration: 5000
                         } ]
