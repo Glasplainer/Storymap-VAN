@@ -158,7 +158,8 @@ var config = {
                 rotateAnimation: false,
                 callback: '',
                 onChapterEnter: [ {layer: 'Local-Area',
-                 opacity: 0.23, duration: 5000},
+                 opacity: 0.23, 
+duration: 5000},
                    {layer: 'Wayfinding-map-guide',
                        opacity: 1,
                     duration: 5000
